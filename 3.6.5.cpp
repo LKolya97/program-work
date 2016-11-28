@@ -1,20 +1,26 @@
-#include <iostream>
-#include "math.h"
-using namespace std;
-int main(){
-	double n,a,b;
-	cout<<"Enter N\n";
-	cin>>n;
-cout<<"Enter the number \n";
-cin>>b;
-	for (int i=2;i<=n;i++){
-		cout<<"Enter the number \n";
-		cin>>a;
-		if (a<b){
-			b=a;
-		}
-	}
+// ConsoleApplication17.cpp : Defines the entry point for the console application.
+//
 
-	cout<<"minimum is "<<b;
-	return 1;
+#include "stdafx.h"
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	double n,a,b,p;
+	b = 1;
+	a = 0;
+	cout << "Enter your number\n";
+	cin >> n;
+	for (int i = 1; i <= n; i++) {
+		a = a + i*i;
+	}
+	for (int i = 2; i <= n; i++) {
+		b = b*i;
+	}
+	p = a / b;
+	cout << p;
+	cin >> n;
+    return 0;
 }
+
